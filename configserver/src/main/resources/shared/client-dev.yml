@@ -1,0 +1,16 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: client
+  thymeleaf:
+  #静态页面模板
+    prefix: classpath:/static/
+    #static是默认的访问路径
+    suffix: .html
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
